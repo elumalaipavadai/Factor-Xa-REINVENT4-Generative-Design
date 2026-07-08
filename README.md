@@ -285,25 +285,7 @@ This provides a clear bridge from ligand-based machine learning to generative mo
 
 ## Author
 
-**Elumalai Pavadai, Ph.D.**
-Computational chemistry / cheminformatics scientist with experience in QSAR/ML, graph neural networks, generative molecular design, structure-based virtual screening, molecular modeling, and molecular dynamics.
-
-GitHub: [elumalaipavadai](https://github.com/elumalaipavadai)
-
----
-
-## Author
-
-**Elumalai Pavadai, Ph.D.**
-Computational chemistry / cheminformatics scientist with experience in QSAR/ML, graph neural networks, generative molecular design, structure-based virtual screening, molecular modeling, and molecular dynamics.
-
-GitHub: [elumalaipavadai](https://github.com/elumalaipavadai) | LinkedIn: [Elumalai Pavadai](LINKEDIN_URL)
-
----
-
-## Author
-
-**Elumalai Pavadai, Ph.D.**
+**Elumalai Pavadai, Ph.D.**  
 Computational chemistry / cheminformatics scientist with experience in QSAR/ML, graph neural networks, generative molecular design, structure-based virtual screening, molecular modeling, and molecular dynamics.
 
 GitHub: [elumalaipavadai](https://github.com/elumalaipavadai) | LinkedIn: [Elumalai Pavadai](https://www.linkedin.com/in/elumalai-pavadai)
