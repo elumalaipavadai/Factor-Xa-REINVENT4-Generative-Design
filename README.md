@@ -71,6 +71,8 @@ Project 1 model used here: https://github.com/elumalaipavadai/Factor-Xa-QSAR-GNN
 
 ```text
 models/fxa_05b_best_scaffold_feature_model.joblib
+
+> **Note:** The Project 1 scoring model (`fxa_05b_best_scaffold_feature_model.joblib`) and the REINVENT4 prior (`reinvent.prior`) are **external inputs** and are not redistributed in this repository. The scoring model is available from the [Project 1 repository](https://github.com/elumalaipavadai/Factor-Xa-QSAR-GNN-Activity-Prediction), and the prior from the [REINVENT4 project](https://github.com/MolecularAI/REINVENT4).
 ```
 
 The scoring model was a scikit-learn pipeline:
