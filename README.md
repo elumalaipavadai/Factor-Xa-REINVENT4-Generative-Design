@@ -35,7 +35,7 @@ The main trade-off was drug-likeness: the basic druglike fraction decreased from
 After scoring the TL-generated molecules, candidates were filtered for:
 
 1. Valid RDKit molecule
-2. Novel relative to the Project 1 FXA reference set
+2. Novel relative to the Project 1 FXA reference set (Project 1 repository: Factor-Xa-QSAR-GNN-Activity-Prediction)
 3. Basic druglike properties
 4. High predicted FXA pKi
 
@@ -65,12 +65,14 @@ The best prioritized candidate from the docking queue was:
 
 ## Project Context
 
-This project builds directly on Project 1, where a scaffold-aware Factor Xa activity model was trained using curated ChEMBL FXa bioactivity data.
+This project builds directly on Project 1 repository: [Factor-Xa-QSAR-GNN-Activity-Prediction](https://github.com/elumalaipavadai/Factor-Xa-QSAR-GNN-Activity-Prediction), where a scaffold-aware Factor Xa activity model was trained using curated ChEMBL FXa bioactivity data.
 
-Project 1 model used here:
+Project 1 model used here: https://github.com/elumalaipavadai/Factor-Xa-QSAR-GNN-Activity-Prediction
 
 ```text
 models/fxa_05b_best_scaffold_feature_model.joblib
+
+> **Note:** The Project 1 scoring model (`fxa_05b_best_scaffold_feature_model.joblib`) and the REINVENT4 prior (`reinvent.prior`) are **external inputs** and are not redistributed in this repository. The scoring model is available from the [Project 1 repository](https://github.com/elumalaipavadai/Factor-Xa-QSAR-GNN-Activity-Prediction), and the prior from the [REINVENT4 project](https://github.com/MolecularAI/REINVENT4).
 ```
 
 The scoring model was a scikit-learn pipeline:
@@ -94,7 +96,7 @@ In this project, the model was used as a scoring function to evaluate molecules 
 ## Workflow Overview
 
 ```text
-Project 1 FXA ML model
+Project 1 FXA ML model, Project 1 repository: [Factor-Xa-QSAR-GNN-Activity-Prediction](https://github.com/elumalaipavadai/Factor-Xa-QSAR-GNN-Activity-Prediction)
         |
         v
 Prepare potent FXA seed molecules
