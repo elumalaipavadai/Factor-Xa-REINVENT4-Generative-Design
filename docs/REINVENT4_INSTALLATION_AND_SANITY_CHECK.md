@@ -19,19 +19,19 @@ Final project structure used:
 
 ```text
 FXA_REINVENT_Portfolio/
-â”œâ”€â”€ configs/
-â”œâ”€â”€ data/
-â”‚   â”œâ”€â”€ generated/
-â”‚   â””â”€â”€ reference/
-â”œâ”€â”€ docs/
-â”œâ”€â”€ external/
-â”‚   â””â”€â”€ REINVENT4/
-â”œâ”€â”€ models/
-â”œâ”€â”€ results/
-â”‚   â”œâ”€â”€ metrics/
-â”‚   â”œâ”€â”€ tables/
-â”‚   â””â”€â”€ figures/
-â””â”€â”€ scripts/
+├── configs/
+├── data/
+│   ├── generated/
+│   └── reference/
+├── docs/
+├── external/
+│   └── REINVENT4/
+├── models/
+├── results/
+│   ├── metrics/
+│   ├── tables/
+│   └── figures/
+└── scripts/
 ```
 
 ---
@@ -212,7 +212,7 @@ Error:
 ModuleNotFoundError: No module named 'resource'
 ```
 
-Reason: Pythonâ€™s `resource` module is Unix/Linux-specific. REINVENT imported it in `hw_report.py`.
+Reason: Python’s `resource` module is Unix/Linux-specific. REINVENT imported it in `hw_report.py`.
 
 Fix: patch `hw_report.py` to make `resource` optional.
 
