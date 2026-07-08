@@ -209,6 +209,20 @@ results/tables/tl_fxa_docking_queue_top30.csv
 This file contains the top candidates for structure-based validation.
 
 ---
+## Figures
+
+**Prior vs TL key metrics**
+
+![Prior vs TL key metrics](results/figures/prior_vs_tl_key_metrics.png)
+
+**Prior vs TL predicted pKi distribution**
+
+![Prior vs TL predicted pKi distribution](results/figures/prior_vs_tl_predicted_pki_distribution.png)
+
+**TL candidate tier counts**
+
+![TL candidate tier counts](results/figures/tl_candidate_tier_counts.png)
+
 
 ## Reproducible Script Order
 
