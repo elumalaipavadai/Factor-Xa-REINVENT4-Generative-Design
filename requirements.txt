@@ -1,0 +1,17 @@
+﻿# Requirements for the scoring and analysis portion of this project
+# (Project 1 Factor Xa RF scoring, prior-vs-TL comparison, candidate prioritization, figures).
+#
+# These are the core scientific packages used by the scripts in this repo.
+# The REINVENT4 generative step requires a separate installation - see
+# docs/REINVENT4_INSTALLATION_AND_SANITY_CHECK.md
+#
+# Versions pinned from the working conda environment (Python 3.10).
+# Install into a clean environment with: pip install -r requirements.txt
+
+numpy==1.26.4
+scipy==1.15.2
+pandas==2.2.3
+scikit-learn==1.7.2
+matplotlib==3.10.9
+joblib==1.5.3
+rdkit==2026.3.3
