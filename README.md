@@ -65,9 +65,9 @@ The best prioritized candidate from the docking queue was:
 
 ## Project Context
 
-This project builds directly on Project 1 repository: Factor-Xa-QSAR-GNN-Activity-Prediction, where a scaffold-aware Factor Xa activity model was trained using curated ChEMBL FXa bioactivity data.
+This project builds directly on Project 1 repository: [Factor-Xa-QSAR-GNN-Activity-Prediction](https://github.com/elumalaipavadai/Factor-Xa-QSAR-GNN-Activity-Prediction), where a scaffold-aware Factor Xa activity model was trained using curated ChEMBL FXa bioactivity data.
 
-Project 1 model used here:
+Project 1 model used here: https://github.com/elumalaipavadai/Factor-Xa-QSAR-GNN-Activity-Prediction
 
 ```text
 models/fxa_05b_best_scaffold_feature_model.joblib
@@ -94,7 +94,7 @@ In this project, the model was used as a scoring function to evaluate molecules 
 ## Workflow Overview
 
 ```text
-Project 1 FXA ML model, Project 1 repository: Factor-Xa-QSAR-GNN-Activity-Prediction
+Project 1 FXA ML model, Project 1 repository: [Factor-Xa-QSAR-GNN-Activity-Prediction](https://github.com/elumalaipavadai/Factor-Xa-QSAR-GNN-Activity-Prediction)
         |
         v
 Prepare potent FXA seed molecules
