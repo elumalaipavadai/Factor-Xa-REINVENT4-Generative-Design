@@ -1,0 +1,82 @@
+{
+  "script": "01_prepare_reinvent_seed_smiles.py",
+  "input_csv": ".\\data\\reference\\fxa_04_modeling_dataset.csv",
+  "settings": {
+    "pki_threshold": 8.0,
+    "max_seeds": null,
+    "default_smi_smiles_only": false,
+    "canonicalization": {
+      "canonical": true,
+      "isomericSmiles": true
+    }
+  },
+  "detected_columns": {
+    "smiles_col": "model_smiles",
+    "target_col": "target_pKi",
+    "id_col": "molecule_chembl_id"
+  },
+  "counts": {
+    "input_rows": 3695,
+    "rows_with_numeric_target": 3695,
+    "valid_smiles_rows": 3695,
+    "invalid_smiles_rows": 0,
+    "all_valid_unique_canonical_smiles": 3695,
+    "potent_unique_seeds": 1249,
+    "basic_druglike_seed_count": 1052
+  },
+  "target_summary_all_unique": {
+    "n": 3695,
+    "min": 2.259637310505756,
+    "median": 7.022276394711152,
+    "mean": 7.076052084309899,
+    "max": 12.0
+  },
+  "target_summary_potent_seeds": {
+    "n": 1249,
+    "min": 8.0,
+    "median": 8.886056647693163,
+    "mean": 9.028053224017095,
+    "max": 12.0
+  },
+  "property_summary_potent_seeds": {
+    "mw": {
+      "n": 1249,
+      "min": 226.279,
+      "median": 510.45100000000014,
+      "mean": 514.0876020816655,
+      "max": 864.3669999999997
+    },
+    "clogp": {
+      "n": 1249,
+      "min": -1.7247999999999948,
+      "median": 4.065670000000001,
+      "mean": 3.9937851080864717,
+      "max": 7.674520000000004
+    },
+    "tpsa": {
+      "n": 1249,
+      "min": 41.370000000000005,
+      "median": 108.0,
+      "mean": 113.76667734187352,
+      "max": 258.13
+    },
+    "qed": {
+      "n": 1249,
+      "min": 0.042870539581036954,
+      "median": 0.33516312489888145,
+      "mean": 0.3579048896952647,
+      "max": 0.8336978731161806
+    }
+  },
+  "outputs": {
+    "seed_smi_default": ".\\data\\reference\\fxa_reinvent_seed_pki_ge_8p0.smi",
+    "seed_smi_smiles_only": ".\\data\\reference\\fxa_reinvent_seed_pki_ge_8p0_smiles_only.smi",
+    "seed_csv": ".\\data\\reference\\fxa_reinvent_seed_pki_ge_8p0.csv",
+    "reference_smi_with_ids": ".\\data\\reference\\fxa_reference_all_valid_unique_smiles.smi",
+    "reference_smi_smiles_only": ".\\data\\reference\\fxa_reference_all_valid_unique_smiles_smiles_only.smi",
+    "reference_csv": ".\\data\\reference\\fxa_reference_all_valid_unique_smiles.csv",
+    "invalid_csv": null,
+    "summary_json": ".\\results\\metrics\\fxa_reinvent_seed_summary.json"
+  },
+  "reinvent_compatibility_note": "Different REINVENT run modes may expect different input formats. Use the *_smiles_only.smi file for modes requiring one SMILES per line. Use the default .smi file when SMILES<TAB>ID is accepted or useful."
+}

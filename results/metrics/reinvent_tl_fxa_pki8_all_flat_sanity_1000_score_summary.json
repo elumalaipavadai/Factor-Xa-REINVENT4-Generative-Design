@@ -1,0 +1,29 @@
+{
+  "input_csv": ".\\data\\generated\\reinvent_tl_fxa_pki8_all_flat_sanity_1000.csv",
+  "model_file": ".\\models\\fxa_05b_best_scaffold_feature_model.joblib",
+  "reference_csv": ".\\data\\reference\\fxa_reference_all_valid_unique_smiles.csv",
+  "output_csv": ".\\data\\generated\\reinvent_tl_fxa_pki8_all_flat_sanity_1000_scored_fxa.csv",
+  "top50_csv": ".\\results\\tables\\reinvent_tl_fxa_pki8_all_flat_sanity_1000_top50_fxa.csv",
+  "fingerprint": {
+    "type": "MorganGenerator binary fingerprint",
+    "radius": 2,
+    "fpSize": 2048,
+    "countSimulation": false,
+    "includeChirality": false,
+    "useBondTypes": true
+  },
+  "n_input_rows": 911,
+  "n_valid_rdkit": 911,
+  "n_invalid_rdkit": 0,
+  "n_unique_valid_canonical": 911,
+  "n_novel_vs_reference": 911,
+  "n_basic_druglike": 600,
+  "predicted_pKi_mean": 6.673987780979443,
+  "predicted_pKi_median": 6.646708995355878,
+  "predicted_pKi_max": 8.941557428836823,
+  "predicted_pKi_top10_mean": 8.020908128125933,
+  "n_pred_pKi_ge_7": 171,
+  "n_pred_pKi_ge_8": 4,
+  "rf_uncertainty_median": 1.5344374462089685,
+  "rf_uncertainty_top10_mean": 1.628300609587799
+}

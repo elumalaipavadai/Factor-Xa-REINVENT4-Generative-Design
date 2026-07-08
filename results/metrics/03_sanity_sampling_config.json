@@ -1,0 +1,29 @@
+{
+    "run_type": "sampling",
+    "device": "cpu",
+    "tb_logdir": null,
+    "json_out_config": "results/metrics/03_sanity_sampling_config.json",
+    "seed": null,
+    "parameters": {
+        "model_file": "external/REINVENT4/priors/reinvent.prior",
+        "num_smiles": 100,
+        "smiles_file": null,
+        "target_smiles_path": "",
+        "sample_strategy": "multinomial",
+        "output_file": "data/generated/reinvent_sanity_100.csv",
+        "target_nll_file": "target_nll.csv",
+        "unique_molecules": true,
+        "randomize_smiles": true,
+        "isomeric_smiles": false,
+        "temperature": 1.0
+    },
+    "scoring": null,
+    "scheduler": null,
+    "responder": null,
+    "filter": null,
+    "stage": null,
+    "learning_strategy": null,
+    "diversity_filter": null,
+    "intrinsic_penalty": null,
+    "inception": null
+}

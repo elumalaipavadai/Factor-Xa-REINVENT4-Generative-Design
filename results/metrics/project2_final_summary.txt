@@ -1,0 +1,26 @@
+Project 2 Summary
+=================
+
+Title:
+REINVENT-Based Generative Design of Factor Xa Inhibitors Using Scaffold-Aware ML Scoring
+
+Main result:
+A short REINVENT transfer-learning run shifted generated molecules toward higher predicted Factor Xa activity.
+
+Prior vs TL:
+- Mean predicted pKi: 6.531 -> 6.674
+- Top10 mean predicted pKi: 7.573 -> 8.021
+- Predicted pKi >= 7 molecules: 102 -> 171
+- Predicted pKi >= 8 molecules: 0 -> 4
+
+Candidate prioritization:
+- Valid + novel + druglike TL candidates: 600
+- Tier 1 candidates, predicted pKi >= 8: 2
+- Tier 2 candidates, predicted pKi 7.5-8: 13
+- Tier 3 candidates, predicted pKi 7-7.5: 77
+
+Interpretation:
+Transfer learning produced a measurable enrichment of high-scoring Factor Xa-like molecules compared with the original REINVENT prior. The final prioritized output is a novel, druglike candidate set and a top-30 docking queue for structure-based follow-up.
+
+Caution:
+Predicted activity comes from a scaffold-aware ML model and should be treated as a prioritization signal, not experimental activity. The next validation step is docking/structure-based filtering.

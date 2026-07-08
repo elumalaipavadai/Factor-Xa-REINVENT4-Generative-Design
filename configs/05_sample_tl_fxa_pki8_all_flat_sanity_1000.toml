@@ -1,0 +1,29 @@
+# STEP 05A: Sample molecules from the FXA transfer-learned REINVENT model
+#
+# Purpose:
+# Generate molecules from the short TL sanity model and compare them later
+# against molecules generated from the original REINVENT prior.
+#
+# Input model:
+# models/fxa_reinvent_tl_pki8_all_flat_sanity.model
+#
+# Output:
+# data/generated/reinvent_tl_fxa_pki8_all_flat_sanity_1000.csv
+
+run_type = "sampling"
+device = "cpu"
+
+json_out_config = "results/metrics/05_sample_tl_fxa_pki8_all_flat_sanity_1000_config.json"
+
+[parameters]
+
+model_file = "models/fxa_reinvent_tl_pki8_all_flat_sanity.model"
+
+sample_strategy = "multinomial"
+temperature = 1.0
+
+output_file = "data/generated/reinvent_tl_fxa_pki8_all_flat_sanity_1000.csv"
+
+num_smiles = 1000
+unique_molecules = true
+randomize_smiles = true

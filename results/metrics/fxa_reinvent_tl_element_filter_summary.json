@@ -1,0 +1,24 @@
+{
+  "input_smi": ".\\data\\reference\\fxa_reinvent_tl_pki_ge_8p0_flat_smiles_only.smi",
+  "output_supported_smi": ".\\data\\reference\\fxa_reinvent_tl_pki_ge_8p0_flat_reinvent_elements_smiles_only.smi",
+  "output_removed_tsv": ".\\data\\reference\\fxa_reinvent_tl_pki_ge_8p0_flat_reinvent_elements_removed.tsv",
+  "supported_elements": [
+    "Br",
+    "C",
+    "Cl",
+    "F",
+    "N",
+    "O",
+    "S"
+  ],
+  "n_input_smiles": 1211,
+  "n_supported_smiles": 1199,
+  "n_removed_smiles": 12,
+  "drop_fraction": 0.00990916597853014,
+  "unsupported_element_counts": {
+    "B": 9,
+    "I": 2,
+    "P": 1
+  },
+  "max_drop_fraction_guard": 0.05
+}

@@ -1,0 +1,15 @@
+{
+  "input_mode": "all_flat",
+  "input_smi": ".\\data\\reference\\fxa_reinvent_tl_pki_ge_8p0_flat_reinvent_elements_smiles_only.smi",
+  "n_input_lines": 1199,
+  "n_unique_smiles": 1199,
+  "n_duplicates_removed": 0,
+  "train_fraction": 0.8,
+  "random_seed": 42,
+  "minimum_unique_smiles_guard": 10,
+  "n_train": 959,
+  "n_validation": 240,
+  "n_train_valid_overlap": 0,
+  "train_smi": ".\\data\\reference\\tl_split\\fxa_tl_train_pki8_all_flat_elements.smi",
+  "validation_smi": ".\\data\\reference\\tl_split\\fxa_tl_valid_pki8_all_flat_elements.smi"
+}

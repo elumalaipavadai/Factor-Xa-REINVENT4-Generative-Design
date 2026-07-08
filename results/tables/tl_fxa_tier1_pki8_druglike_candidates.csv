@@ -1,0 +1,3 @@
+Candidate_Rank,Candidate_Tier,Selection_Score,Predicted_FXA_pKi,RF_Tree_Uncertainty,MW,cLogP,TPSA,HBD,HBA,RotBonds,HeavyAtoms,QED,SMILES,Canonical_Flat_SMILES
+1,Tier_1_pKi_ge_8_druglike,8.17853599940723,8.11639404877027,1.290277130671897,366.851,3.353200000000002,68.17,1,4,4,23,0.7694224666098698,O=c1ccccn1-c1ccc(NS(=O)(=O)c2ccc(Cl)s2)cc1,O=c1ccccn1-c1ccc(NS(=O)(=O)c2ccc(Cl)s2)cc1
+2,Tier_1_pKi_ge_8_druglike,7.7172965768019965,8.114685096041361,2.0443710352969986,464.4040000000002,2.6347700000000005,163.35,4,5,8,33,0.2274084791697685,N=C(N)c1cccc(-n2nc(C(F)(F)F)cc2C(=O)N=c2cc(CCCCC(=O)O)o[nH]2)c1,N=C(N)c1cccc(-n2nc(C(F)(F)F)cc2C(=O)N=c2cc(CCCCC(=O)O)o[nH]2)c1

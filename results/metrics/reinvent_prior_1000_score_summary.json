@@ -1,0 +1,29 @@
+{
+  "input_csv": ".\\data\\generated\\reinvent_prior_1000.csv",
+  "model_file": ".\\models\\fxa_05b_best_scaffold_feature_model.joblib",
+  "reference_csv": ".\\data\\reference\\fxa_reference_all_valid_unique_smiles.csv",
+  "output_csv": ".\\data\\generated\\reinvent_prior_1000_scored_fxa.csv",
+  "top50_csv": ".\\results\\tables\\reinvent_prior_1000_top50_fxa.csv",
+  "fingerprint": {
+    "type": "MorganGenerator binary fingerprint",
+    "radius": 2,
+    "fpSize": 2048,
+    "countSimulation": false,
+    "includeChirality": false,
+    "useBondTypes": true
+  },
+  "n_input_rows": 982,
+  "n_valid_rdkit": 982,
+  "n_invalid_rdkit": 0,
+  "n_unique_valid_canonical": 982,
+  "n_novel_vs_reference": 982,
+  "n_basic_druglike": 791,
+  "predicted_pKi_mean": 6.531452071389368,
+  "predicted_pKi_median": 6.508502293980895,
+  "predicted_pKi_max": 7.9218264342671345,
+  "predicted_pKi_top10_mean": 7.573206025272664,
+  "n_pred_pKi_ge_7": 102,
+  "n_pred_pKi_ge_8": 0,
+  "rf_uncertainty_median": 1.5030246604907074,
+  "rf_uncertainty_top10_mean": 1.5130685012309135
+}

@@ -1,0 +1,20 @@
+{
+  "input_csv": ".\\data\\reference\\fxa_reinvent_seed_pki_ge_8p0.csv",
+  "smiles_column": "canonical_smiles",
+  "pki_column": "target_pKi",
+  "druglike_column": "basic_druglike_flag",
+  "n_input_rows": 1249,
+  "n_invalid_smiles_after_rdkit": 0,
+  "n_valid_flat_smiles_before_deduplication": 1249,
+  "n_valid_flat_smiles_unique": 1211,
+  "n_duplicates_removed_after_flattening": 38,
+  "n_druglike_flat_smiles_unique": 1017,
+  "n_with_stereo_tokens_after_flattening_all": 0,
+  "n_with_stereo_tokens_after_flattening_druglike": 0,
+  "output_all_csv": ".\\data\\reference\\fxa_reinvent_tl_pki_ge_8p0_flat.csv",
+  "output_all_smi": ".\\data\\reference\\fxa_reinvent_tl_pki_ge_8p0_flat_smiles_only.smi",
+  "output_druglike_csv": ".\\data\\reference\\fxa_reinvent_tl_pki_ge_8p0_druglike_flat.csv",
+  "output_druglike_smi": ".\\data\\reference\\fxa_reinvent_tl_pki_ge_8p0_druglike_flat_smiles_only.smi",
+  "canonicalization": "RDKit MolToSmiles(canonical=True, isomericSmiles=False)",
+  "recommended_tl_smiles_file": ".\\data\\reference\\fxa_reinvent_tl_pki_ge_8p0_druglike_flat_smiles_only.smi"
+}

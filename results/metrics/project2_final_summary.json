@@ -1,0 +1,42 @@
+{
+  "project_title": "REINVENT-Based Generative Design of Factor Xa Inhibitors Using Scaffold-Aware ML Scoring",
+  "prior_vs_tl": {
+    "prior_n_valid": 982.0,
+    "tl_n_valid": 911.0,
+    "prior_mean_predicted_pKi": 6.531452071389368,
+    "tl_mean_predicted_pKi": 6.673987780979443,
+    "mean_predicted_pKi_shift": 0.1425357095900752,
+    "prior_top10_mean_predicted_pKi": 7.573206025272664,
+    "tl_top10_mean_predicted_pKi": 8.020908128125933,
+    "top10_mean_predicted_pKi_shift": 0.4477021028532695,
+    "prior_n_pki_ge_7": 102.0,
+    "tl_n_pki_ge_7": 171.0,
+    "prior_n_pki_ge_8": 0.0,
+    "tl_n_pki_ge_8": 4.0
+  },
+  "candidate_prioritization": {
+    "input_csv": ".\\data\\generated\\reinvent_tl_fxa_pki8_all_flat_sanity_1000_scored_fxa.csv",
+    "n_total_scored_rows": 911,
+    "n_valid_novel_druglike": 600,
+    "n_tier1_pki_ge_8_druglike": 2,
+    "n_tier2_pki_7p5_to_8_druglike": 13,
+    "n_tier3_pki_7_to_7p5_druglike": 77,
+    "top_candidate_predicted_pKi": 8.11639404877027,
+    "top_candidate_selection_score": 8.17853599940723,
+    "median_candidate_uncertainty": 1.5295942606500765,
+    "outputs": {
+      "tier1_csv": ".\\results\\tables\\tl_fxa_tier1_pki8_druglike_candidates.csv",
+      "tier2_csv": ".\\results\\tables\\tl_fxa_tier2_pki7p5_druglike_candidates.csv",
+      "top100_csv": ".\\results\\tables\\tl_fxa_top100_ranked_candidates.csv",
+      "docking_queue_top30_csv": ".\\results\\tables\\tl_fxa_docking_queue_top30.csv"
+    }
+  },
+  "outputs": {
+    "key_metrics_csv": ".\\results\\tables\\project2_final_key_metrics.csv",
+    "key_metrics_figure": ".\\results\\figures\\prior_vs_tl_key_metrics.png",
+    "pki_distribution_figure": ".\\results\\figures\\prior_vs_tl_predicted_pki_distribution.png",
+    "candidate_tier_counts_figure": ".\\results\\figures\\tl_candidate_tier_counts.png",
+    "summary_json": ".\\results\\metrics\\project2_final_summary.json",
+    "summary_txt": ".\\results\\metrics\\project2_final_summary.txt"
+  }
+}

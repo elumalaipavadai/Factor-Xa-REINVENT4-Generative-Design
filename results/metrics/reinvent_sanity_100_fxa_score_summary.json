@@ -1,0 +1,18 @@
+{
+  "input_csv": ".\\data\\generated\\reinvent_sanity_100.csv",
+  "model_file": ".\\models\\fxa_05b_best_scaffold_feature_model.joblib",
+  "output_csv": ".\\data\\generated\\reinvent_sanity_100_scored_fxa.csv",
+  "n_input_rows": 99,
+  "n_valid_rdkit": 99,
+  "n_unique_valid_canonical": 99,
+  "n_novel_vs_reference": 99,
+  "n_basic_druglike": 87,
+  "predicted_pKi_mean": 6.519455246093916,
+  "predicted_pKi_median": 6.536630830866949,
+  "predicted_pKi_max": 7.327893246703678,
+  "n_pred_pKi_ge_7": 8,
+  "n_pred_pKi_ge_8": 0,
+  "model_info": {
+    "loaded_object_type": "Pipeline"
+  }
+}

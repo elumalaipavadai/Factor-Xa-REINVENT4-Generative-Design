@@ -1,0 +1,42 @@
+# STEP 04B: REINVENT4 transfer-learning sanity run
+#
+# Purpose:
+# Fine-tune the official REINVENT prior using potent, druglike, stereo-free
+# Factor Xa seed molecules.
+#
+# This is a short CPU sanity run, not the final production TL run.
+# If this succeeds, we will later increase epochs and compare generated
+# molecules from prior vs TL model using the FXA RF scoring model.
+
+run_type = "transfer_learning"
+device = "cpu"
+tb_logdir = "results/tensorboard/tb_TL_fxa_pki8_druglike_sanity"
+json_out_config = "results/metrics/04_tl_fxa_pki8_druglike_sanity_config.json"
+
+[parameters]
+
+# Short sanity run first.
+num_epochs = 5
+save_every_n_epochs = 1
+batch_size = 50
+sample_batch_size = 1000
+
+# Start from official REINVENT prior.
+input_model_file = "external/REINVENT4/priors/reinvent.prior"
+
+# Output TL model prefix. REINVENT will save checkpoint files from this prefix.
+output_model_file = "models/fxa_reinvent_tl_pki8_druglike_sanity.model"
+
+# Training and validation SMILES prepared from Step 03.
+smiles_file = "data/reference/tl_split/fxa_tl_train_pki8_druglike_flat.smi"
+validation_smiles_file = "data/reference/tl_split/fxa_tl_valid_pki8_druglike_flat.smi"
+
+# We already curated with RDKit and removed stereo tokens.
+standardize_smiles = false
+
+# Data augmentation during TL.
+randomize_smiles = true
+randomize_all_smiles = false
+
+# Track diversity diagnostics.
+internal_diversity = true
