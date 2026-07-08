@@ -7,6 +7,18 @@ This project demonstrates an end-to-end generative molecular design workflow for
 > **Note:** The Project 1 scoring model (`fxa_05b_best_scaffold_feature_model.joblib`) and the REINVENT4 prior are **external inputs** and are not redistributed in this repository. The trained model is available from the [Project 1 Releases](https://github.com/elumalaipavadai/Factor-Xa-QSAR-GNN-Activity-Prediction/releases); the prior from the [REINVENT4 project](https://github.com/MolecularAI/REINVENT4).
 
 The goal was to test whether a REINVENT prior model could be shifted toward generating molecules with higher predicted FXa activity after transfer learning on potent FXa-like molecules. The result was positive: even a short 5-epoch transfer-learning sanity run enriched the generated chemical space for molecules with higher predicted FXa pKi.
+
+---
+
+## Main Result, Corrected for Unequal Sample Sizes
+
+The original prior and transfer-learned (TL) model produced different numbers of valid unique molecules after sampling: **982** for the prior and **911** for the TL model. Therefore, the most defensible comparison uses both raw counts and rates normalized by the number of valid molecules.
+
+| Metric | Original REINVENT Prior | FXA Transfer-Learned Model | Interpretation |
+|---|---:|---:|---|
+| Valid generated molecules | 982 | 911 | TL produced fewer valid unique molecules after sampling. |
+| Mean predicted pKi | 6.531 | 6.674 | +0.143 pKi shift. |
+| Median predicted pKi | 6.509 | 6.647 | +0.138 pKi shift. |
 | Max predicted pKi | 7.922 | 8.942 | +1.020 pKi increase. |
 | Top-10 mean predicted pKi | 7.573 | 8.021 | +0.448 pKi enrichment among top-ranked molecules. |
 | Predicted pKi >= 7 | 102 / 982 (10.4%) | 171 / 911 (18.8%) | +69 molecules; +8.4 percentage points. |
