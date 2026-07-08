@@ -2,7 +2,9 @@
 
 ## Project Summary
 
-This project demonstrates an end-to-end generative molecular design workflow for **Factor Xa (FXa) inhibitor discovery** using **REINVENT4 transfer learning** and a previously developed **scaffold-aware machine learning activity model**.
+This project demonstrates an end-to-end generative molecular design workflow for **Factor Xa (FXa) inhibitor discovery** using **REINVENT4 transfer learning**. This project builds directly on **Project 1**, where a scaffold-aware Factor Xa activity model was trained on curated ChEMBL bioactivity data: [**Factor-Xa-QSAR-GNN-Activity-Prediction**](https://github.com/elumalaipavadai/Factor-Xa-QSAR-GNN-Activity-Prediction).
+
+> **Note:** The Project 1 scoring model (`fxa_05b_best_scaffold_feature_model.joblib`) and the REINVENT4 prior are **external inputs** and are not redistributed in this repository. The trained model is available from the [Project 1 Releases](https://github.com/elumalaipavadai/Factor-Xa-QSAR-GNN-Activity-Prediction/releases); the prior from the [REINVENT4 project](https://github.com/MolecularAI/REINVENT4).
 
 The goal was to test whether a REINVENT prior model could be shifted toward generating molecules with higher predicted FXa activity after transfer learning on potent FXa-like molecules. The result was positive: even a short 5-epoch transfer-learning sanity run enriched the generated chemical space for molecules with higher predicted FXa pKi.
 
