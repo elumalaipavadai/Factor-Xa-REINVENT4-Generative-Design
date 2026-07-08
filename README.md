@@ -35,7 +35,7 @@ The main trade-off was drug-likeness: the basic druglike fraction decreased from
 After scoring the TL-generated molecules, candidates were filtered for:
 
 1. Valid RDKit molecule
-2. Novel relative to the Project 1 FXA reference set
+2. Novel relative to the Project 1 FXA reference set (Project 1 repository: Factor-Xa-QSAR-GNN-Activity-Prediction)
 3. Basic druglike properties
 4. High predicted FXA pKi
 
@@ -65,7 +65,7 @@ The best prioritized candidate from the docking queue was:
 
 ## Project Context
 
-This project builds directly on Project 1, where a scaffold-aware Factor Xa activity model was trained using curated ChEMBL FXa bioactivity data.
+This project builds directly on Project 1 repository: Factor-Xa-QSAR-GNN-Activity-Prediction, where a scaffold-aware Factor Xa activity model was trained using curated ChEMBL FXa bioactivity data.
 
 Project 1 model used here:
 
@@ -94,7 +94,7 @@ In this project, the model was used as a scoring function to evaluate molecules 
 ## Workflow Overview
 
 ```text
-Project 1 FXA ML model
+Project 1 FXA ML model, Project 1 repository: Factor-Xa-QSAR-GNN-Activity-Prediction
         |
         v
 Prepare potent FXA seed molecules
